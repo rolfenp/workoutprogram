@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isak WU2 D2</title>
+    <style>
+        Body {
+          font-family: Arial, Helvetica, sans-serif;  /* Text stil */
+          margin: auto;                               /* Centrering */
+          width: 1320px;                              /* Bredd */
+          padding: 150px;                             /* Mellanrum top*/
+          background-image: url(Darkplain.jpg);       /* Bakgrundsbild */
+        }
+        .container {
+          max-height: 1000px;                         /* Höjd på container */                                                       
+          width: 1300px;                              /* Bredd på container */
+          border: 10px solid rgb(255, 255, 255);    /* Ram */
+          background-color: rgb(0, 0, 0)  
+        }
+        table {
+          table-layout: fixed;                        /* Lika storlek på Tabell celler */
+          width: 1300px;                              /* Bredd på Tabell */            
+          border-collapse: collapse;                  /* Kollapsad Ram */
+        }
+        td {
+          transition-duration: 200ms;                 /* varaktighet på övergång */
+          text-align: center;                         /* centrering av text */
+          padding: 20px;                              /* Cell förstoring */
+        } 
+        th {
+          transition-duration: 200ms;                 /* varaktighet på övergång */
+          background-color: rgb(0, 0, 0);           /* Svart Bakgrund */
+          color: aliceblue;                         /* Vit text */
+        }
+        .huvud {                                      /* Bild huvud */
+          color: white;                             /* Vit text */
+          text-align: center;                         /* centrering av text */
+          height: 200px;                              /* Höjd på bild */
+          background-image: url(arnoldx.png);         /* Bild */
+        }
+        #Highrep {                                    /* Hög rep sektion */
+          background-color: brown;                  /* Röd bakgrundsfärg */
+          color: white;                             /* Vit text */
+          transition-duration: 200ms;                 /* varaktighet på övergång */
+        }
+        #Lowrep {                                     /* Låg rep sektion */
+          background-color: rgb(245, 61, 61);       /* bakgrundsfärg röd */
+          color: white;                             /* Vit text */            
+          transition-duration: 200ms;                 /* varaktighet på övergång */
+        }
+         #Highrep:hover {
+          transform:scale(1.05);                      /* Uppskalning vid hover */
+          background-color: rgb(243, 74, 74);       /* bakgrundsfärg röd */
+        }
+         #Lowrep:hover {
+          transform:scale(1.05);                      /* Uppskalning vid hover */
+          background-color: rgb(243, 74, 74);       /* bakgrundsfärg röd */
+        } 
+        thead:hover { 
+          transition-duration: 200ms;                 /* varaktighet på övergång */
+          background-color: rgba(128, 128, 128, 0); /* Transparens vid hover */  
+        }
+        p {                                           /* Rubrik text */
+          color: rgb(255, 255, 255);                /* Vit text */
+          font-size: 150px;                           /* Font storlek */
+          text-align: center;                         /* Centrering text */
+          padding: 20px;                              
+          margin:0;                                   
+          letter-spacing: 25px;                       /* ökat mellanrum bokstäver */
+          font-family: fantasy;                       /* fantasy font */
+        }
+        p:hover {
+          transition-duration: 200ms;                 /* varaktighet på övergång */
+          color: rgba(255, 255, 255, 0);            /* Ta bort text vid hover */
+        }
+        h2 {
+          margin:0;                                   /* text tar upp mindre cell plats */
+        }
+        </style>
+</head>
+<body>
+<div class="container">
+  <div class="huvud">
+    <p>Träningschema</p> <!-- Huvud rubrik -->
+  </div>
+    <table>    
+        <thead>
+         <tr> <!-- Vecko dagar -->
+           <th>Måndag</th>
+           <th>Tisdag</th>
+           <th>Onsdag</th>
+           <th>Torsdag</th>
+           <th>Fredag</th>
+           <th>Lördag</th>
+           <th>Söndag</th>
+         </tr>
+        </thead>
+        <tbody> <!-- Första veckan -->
+         <tr id="Highrep">
+          <td><h2>Ben</h2>Knäböj</td>
+          <td><h2>Bröst Triceps</h2>Armhävningar</td>
+          <td><h2>Mage</h2>Situps</td>
+          <td><h2>Rygg<br>Biceps</h2>Pullups</td>
+          <td><h2>Löpträning Intervaller</h2>30min</td>
+          <td><h2>Simmning</h2>2100m</td>
+          <td><h2>Vila</h2></td>
+         </tr> <!-- Andra veckan -->
+         <tr id="Lowrep">
+          <td><h2>Ben</h2>Knäböj</td>
+          <td><h2>Bröst Triceps</h2>Armhävningar</td>
+          <td><h2>Mage</h2>Situps</td>
+          <td><h2>Rygg<br>Biceps</h2>Pullups</td>
+          <td><h2>Löpträning</h2>30min</td>
+          <td><h2>Simmning</h2>2200m</td>
+          <td><h2>Vila</h2></td>
+         </tr> <!-- Tredje veckan -->
+         <tr id="Highrep">
+          <td><h2>Ben</h2>Knäböj</td>
+          <td><h2>Bröst Triceps</h2>Armhävningar</td>
+          <td><h2>Mage</h2>Situps</td>
+          <td><h2>Rygg<br>Biceps</h2>Pullups</td>
+          <td><h2>Löpträning Intervaller</h2>30min</td>
+          <td><h2>Simmning</h2>2300m</td>
+          <td><h2>Vila</h2></td>
+         </tr> <!-- Fjärde veckan -->
+         <tr id="Lowrep">
+          <td><h2>Ben</h2>Knäböj</td>
+          <td><h2>Bröst Triceps</h2>Armhävningar</td>
+          <td><h2>Mage</h2>Situps</td>
+          <td><h2>Rygg<br>Biceps</h2>Pullups</td>
+          <td><h2>Löpträning</h2>30min</td>
+          <td><h2>Simmning</h2>2400m</td>
+          <td><h2>Vila</h2></td>
+         </tr>
+         </tbody>     
+    </table>
+</div>
+</body>
+</html>
